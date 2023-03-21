@@ -50,6 +50,8 @@ or **downgrade**, migrations that were unnecessary or went awry.
 
 ## Building a Migration Manually
 
+Before writing any code, run `pipenv install && pipenv shell` then cd into the `lib/` folder.
+
 Alembic can't detect changes to table names, so let's practice writing manual
 migrations by changing the `students` table to `scholars`. We can do this very
 easily in SQLAlchemy through changing the value of the `__tablename__` class
